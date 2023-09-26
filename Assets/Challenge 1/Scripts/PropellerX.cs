@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PropellerX : MonoBehaviour
 {
-    public float rotationSpeed = 500.0f;
+    private float rotationSpeed = 500.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,7 @@ public class PropellerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // rotate propeller at rotationSpeed
         transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
     }
 }
